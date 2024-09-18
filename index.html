@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Login Form</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        line-height: 1.5;
+        min-height: 100vh;
+        background: #f3f3f3;
+        margin: 0;
+      }
+
+      .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        width: 900px;
+        height: 500px;
+        border: 2px solid #0056b3; /* Blue border */
+      }
+
+      .form-container {
+        width: 50%;
+      }
+
+      .title {
+        color: rgb(18, 18, 158);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      .sub-title {
+        font-size: 20px;
+        margin-top: -10px;
+        text-align: center;
+      }
+
+      label {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+        color: rgb(18, 18, 158);
+        font-weight: bold;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background-color: rgb(18, 18, 158);
+        width: 100%;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: rgb(52, 51, 51);
+        color: white;
+      }
+
+      .image-container {
+        width: 40%;
+        text-align: center;
+      }
+
+      .image-container img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .image-container p {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .image-container p:last-child {
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="form-container">
+        <p class="title">ADVERTISEMENT LICENCE</p>
+        <p class="sub-title">Login Form</p>
+        <form action="">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your Password"
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+        <p>
+          Don't have an account?
+          <a href="#">SignUp</a>
+        </p>
+      </div>
+
+      <div class="image-container">
+        <img src="./logo.png" alt="BBMP logo" />
+        <p>Bruhat Bengaluru Mahanagara Palike</p>
+        <p>ಬೃಹತ್ ಬೆಂಗಳೂರು ಮಹಾನಗರ ಪಾಲಿಕೆ</p>
+      </div>
+    </div>
+  </body>
+</html>
